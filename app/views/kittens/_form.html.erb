@@ -1,3 +1,14 @@
+<% if kitten.errors.any? %>
+  <div class="form-errors">
+    <h2>The following errors prohibited the kitten from being saved:<h2>
+    <ul class="flex column gap-5">
+      <% kitten.errors.full_messages.each do |msg| %>
+        <li><p><%= msg %></p></li>
+      <% end %>
+    <ul>
+  </div>
+<% end %>
+
 <%= form_with(model: kitten, data: { turbo: false }, class: 'flex column gap-10') do |f| %>
   <div class="field">
     <%= f.label :name %>
