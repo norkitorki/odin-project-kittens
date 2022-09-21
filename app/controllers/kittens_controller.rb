@@ -18,7 +18,7 @@ class KittensController < ApplicationController
   def create
     @kitten = Kitten.new(kitten_params)
 
-    if @post.save
+    if @kitten.save
       redirect_to @kitten, notice: 'Kitten was successfully created.'
     else
       flash.now[:alert] = 'Kitten was not created.'
@@ -42,7 +42,7 @@ class KittensController < ApplicationController
 
   private
 
-  def set_kitten
+  def find_kitten
     @kitten = Kitten.find(params[:id])
   end
 
