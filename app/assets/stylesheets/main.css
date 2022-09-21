@@ -36,3 +36,5 @@ td {
 }
 
 .field label { font-weight: bold; }
+
+.delete-link { color: red; }
