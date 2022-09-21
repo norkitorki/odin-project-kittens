@@ -1,0 +1,25 @@
+<%= form_with(model: kitten, data: { turbo: false }, class: 'flex column gap-10') do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.number_field :age, min: 0 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cuteness %>
+    <%= f.select :cuteness, (1..10).to_a %>
+  </div>
+
+  <div class="field">
+    <%= f.label :softness %>
+    <%= f.select :softness, (1..10).to_a %>
+  </div>
+
+  <div class="field align-self-center">
+    <%= f.submit %>
+  </div>
+<% end %>
