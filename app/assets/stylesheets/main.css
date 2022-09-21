@@ -1,6 +1,6 @@
 .notice { color: #079119; }
 
-.alert { color: #ce170a; }
+.alert, .form-errors * { color: #ce170a; }
 
 a {
   text-decoration: none;
@@ -27,6 +27,10 @@ tbody tr { border-bottom: 1px solid black; }
 td {
   vertical-align: middle;
   text-align: center;
+}
+
+.form-errors h2, .form-errors p {
+  font-size: 14px;
 }
 
 .field {
