@@ -1,0 +1,38 @@
+.notice { color: #079119; }
+
+.alert { color: #ce170a; }
+
+a {
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+nav {
+  background-color: #333333;
+  padding: 14px;
+  border-radius: 6px;
+}
+
+nav a { color: #ffffff; }
+
+h1 { font-size: 30px; }
+
+table { border: 1px solid #afafaf; }
+
+th { font-size: 20px; }
+
+tbody tr { border-bottom: 1px solid black; }
+
+td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.field {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label { font-weight: bold; }
